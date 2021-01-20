@@ -36,11 +36,11 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
-CURRENT_DIR=$(pwd)
+CURRENT_DIR="/content/models/research/deeplab/datasets"
 WORK_DIR="."
 
 # Root path for Cityscapes dataset.
-CITYSCAPES_ROOT="${WORK_DIR}/cityscapes"
+CITYSCAPES_ROOT="/content/data" 
 
 export PYTHONPATH="${CITYSCAPES_ROOT}:${PYTHONPATH}"
 
