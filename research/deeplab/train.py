@@ -314,7 +314,7 @@ def main(unused_argv):
       global_step = tf.train.get_or_create_global_step()
 
       # Define the model and create clones.
-      model_fn = _build_deeplab
+      model_fn = _build_deeplab   #model_fn被赋值为一个函数指针
       model_args = (dataset.get_one_shot_iterator(), {
           common.OUTPUT_TYPE: dataset.num_of_classes
       }, dataset.ignore_label)
